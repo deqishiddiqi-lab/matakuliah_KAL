@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>introduction komputasi aljabar linear &#8212; KOMPUTASI ALJABAR LINEAR</title>
+    <title>Materi 1 &#8212; KOMPUTASI ALJABAR LINEAR</title>
   
   
   
@@ -60,10 +60,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materi_1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -163,15 +165,14 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    welcome to web statis
+                    my identity
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">introduction komputasi aljabar linear</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi 1</a></li>
+
 </ul>
 
     </div>
@@ -341,7 +342,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -352,11 +355,30 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>introduction komputasi aljabar linear</h1>
+    <h1>Materi 1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-apa-yang-dimaksud-dengan-aljabar-linear">A. Apa yang Dimaksud dengan Aljabar Linear?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-aljabar-linear">Definisi Aljabar Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kasus-representasi-geometris-geogebra">Contoh Kasus (Representasi Geometris GeoGebra)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gambar">gambar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-komputasi-numerik-menggunakan-python-numpy">Bukti Komputasi Numerik Menggunakan Python (NumPy)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jalankan-kode-di-google-colab">Jalankan Kode di Google Colab</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -366,8 +388,72 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-komputasi-aljabar-linear">
-<h1>introduction komputasi aljabar linear<a class="headerlink" href="#introduction-komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-1">
+<h1>Materi 1<a class="headerlink" href="#materi-1" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="a-apa-yang-dimaksud-dengan-aljabar-linear">
+<h1>A. Apa yang Dimaksud dengan Aljabar Linear?<a class="headerlink" href="#a-apa-yang-dimaksud-dengan-aljabar-linear" title="Link to this heading">#</a></h1>
+<p>Selamat datang di materi awal untuk kuliah Komputasi Aljabar Linear. Di halaman ini, kita bakal bahas konsep paling mendasar dari aljabar linear, melihat bentuknya secara visual lewat grafik, dan membuktikannya langsung pakai program Python.</p>
+<section id="definisi-aljabar-linear">
+<h2>Definisi Aljabar Linear<a class="headerlink" href="#definisi-aljabar-linear" title="Link to this heading">#</a></h2>
+<p>Aljabar linear sebenarnya adalah cabang matematika yang fokus mempelajari matriks, vektor, ruang vektor, sistem persamaan linear, beserta transformasi linear yang menghubungkannya. Sederhananya, bidang ini berfokus pada hubungan garis lurus dan struktur matematika yang teratur. Di era sekarang, konsep ini jadi fondasi yang sangat penting di dunia sains, teknik, ilmu komputer, sampai pengembangan machine learning.</p>
+<hr class="docutils" />
+</section>
+<section id="contoh-kasus-representasi-geometris-geogebra">
+<h2>Contoh Kasus (Representasi Geometris GeoGebra)<a class="headerlink" href="#contoh-kasus-representasi-geometris-geogebra" title="Link to this heading">#</a></h2>
+<p>Misalkan kita punya dua buah persamaan garis linear seperti ini:</p>
+<div class="math notranslate nohighlight">
+\[g_1 : y = 3x + 1\]</div>
+<div class="math notranslate nohighlight">
+\[g_2 : y = -2x + 6\]</div>
+<p>Supaya bisa diolah ke dalam format standar Sistem Persamaan Linear (<span class="math notranslate nohighlight">\(Ax = B\)</span>), kita pindahkan variabel <span class="math notranslate nohighlight">\(x\)</span> ke ruas kiri. Hasilnya menjadi:</p>
+<div class="math notranslate nohighlight">
+\[-3x + y = 1\]</div>
+<div class="math notranslate nohighlight">
+\[2x + y = 6\]</div>
+<p>Kalau diubah ke dalam struktur matriks dan vektor, bentuknya bakal kelihatan seperti ini:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} -3 &amp; 1 \\ 2 &amp; 1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 1 \\ 6 \end{bmatrix}\end{split}\]</div>
+<p>Ketika kedua persamaan garis di atas kita masukkan ke aplikasi GeoGebra, kita bakal melihat visualisasi dua garis lurus yang saling bersilangan:
+Garis g1 menggambarkan fungsi linear dari persamaan <span class="math notranslate nohighlight">\(y = 3x + 1\)</span>.
+Garis g2 menggambarkan fungsi linear dari persamaan <span class="math notranslate nohighlight">\(y = -2x + 6\)</span>.</p>
+<section id="gambar">
+<h3>gambar<a class="headerlink" href="#gambar" title="Link to this heading">#</a></h3>
+<p><img alt="Visualisasi Gegebra" src="aljabar1.png" />
+<img alt="Visualisasi Gegebra" src="aljabar2.png" /></p>
+<p>Titik Perpotongan:
+Dua garis tersebut saling memotong tepat di satu titik koordinat tunggal. Dalam aljabar linear, lokasi pertemuan atau titik silang inilah yang menjadi jawaban atau solusi utama dari sistem persamaan tersebut.</p>
+</section>
+</section>
+<section id="bukti-komputasi-numerik-menggunakan-python-numpy">
+<h2>Bukti Komputasi Numerik Menggunakan Python (NumPy)<a class="headerlink" href="#bukti-komputasi-numerik-menggunakan-python-numpy" title="Link to this heading">#</a></h2>
+<p>Sekarang kita buktikan secara pasti berapa koordinat titik potong dari grafik GeoGebra tadi menggunakan library NumPy di Python. Kode ini bakal langsung mencari nilai koordinat <span class="math notranslate nohighlight">\(x\)</span> dan <span class="math notranslate nohighlight">\(y\)</span> yang pas:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">### code python</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Matriks Koefisien A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Vektor Hasil B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Menyelesaikan persamaan Ax = B untuk mendapatkan koordinat (x, y)</span>
+<span class="n">solusi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--- BUKTI OUTPUT PYTHON ---&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Titik potong berhasil ditemukan:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nilai X = </span><span class="si">{</span><span class="n">solusi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nilai Y = </span><span class="si">{</span><span class="n">solusi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Koordinat Solusi: (</span><span class="si">{</span><span class="n">solusi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">solusi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="jalankan-kode-di-google-colab">
+<h2>Jalankan Kode di Google Colab<a class="headerlink" href="#jalankan-kode-di-google-colab" title="Link to this heading">#</a></h2>
+<p>Untuk mencoba dan menjalankan kode program Python dari materi ini secara langsung di browser, silakan klik tombol di bawah ini:</p>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1-Ty2WsZhy8OMUWfdEdQJI8Dfkj1bzyfo?usp=sharing"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,12 +487,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown-notebooks.html"
+       href="notebooks.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">Content with notebooks</p>
       </div>
     </a>
 </div>
@@ -415,6 +501,34 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-apa-yang-dimaksud-dengan-aljabar-linear">A. Apa yang Dimaksud dengan Aljabar Linear?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-aljabar-linear">Definisi Aljabar Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kasus-representasi-geometris-geogebra">Contoh Kasus (Representasi Geometris GeoGebra)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gambar">gambar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-komputasi-numerik-menggunakan-python-numpy">Bukti Komputasi Numerik Menggunakan Python (NumPy)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jalankan-kode-di-google-colab">Jalankan Kode di Google Colab</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
