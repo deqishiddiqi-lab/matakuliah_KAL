@@ -2,7 +2,7 @@
 
 # A. Apa yang Dimaksud dengan Aljabar Linear?
 
-Selamat datang di materi awal untuk kuliah Komputasi Aljabar Linear. Di halaman ini, kita bakal bahas konsep paling mendasar dari aljabar linear, melihat bentuknya secara visual lewat grafik, dan membuktikannya langsung pakai program Python.
+Aljabar Linear adalah cabang dari Matematika yang mempelajari vektor, matriks, dan transformasi linear, serta bagaimana objek-objek tersebut digunakan untuk menyelesaikan berbagai masalah, terutama yang melibatkan sistem persamaan linear.
 
 ### Definisi Aljabar Linear
 
@@ -14,13 +14,13 @@ Aljabar linear sebenarnya adalah cabang matematika yang fokus mempelajari matrik
 
 Misalkan kita punya dua buah persamaan garis linear seperti ini:
 
-$$g_1 : y = 3x + 1$$
-$$g_2 : y = -2x + 6$$
+$$f(x)= 3x + 5$$
+$$g(x)= -2x + 7$$
 
 Supaya bisa diolah ke dalam format standar Sistem Persamaan Linear ($Ax = B$), kita pindahkan variabel $x$ ke ruas kiri. Hasilnya menjadi:
 
-$$-3x + y = 1$$
-$$2x + y = 6$$
+$$f: -3x + y = 1$$
+$$g: 2x + y = 6$$
 
 Kalau diubah ke dalam struktur matriks dan vektor, bentuknya bakal kelihatan seperti ini:
 
@@ -32,8 +32,8 @@ Garis g2 menggambarkan fungsi linear dari persamaan $y = -2x + 6$.
 
 #### gambar
 
-![Visualisasi Gegebra](aljabar1.png)
-![Visualisasi Gegebra](aljabar2.png)
+![Visualisasi Gegebra](gambar_materi_1.png)
+![Visualisasi Gegebra](gambar2_materi_1.png)
 
 Titik Perpotongan:
 Dua garis tersebut saling memotong tepat di satu titik koordinat tunggal. Dalam aljabar linear, lokasi pertemuan atau titik silang inilah yang menjadi jawaban atau solusi utama dari sistem persamaan tersebut.
