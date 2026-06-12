@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>my identity &#8212; KOMPUTASI ALJABAR LINEAR</title>
+    <title>tugas &#8212; KOMPUTASI ALJABAR LINEAR</title>
   
   
   
@@ -62,10 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'OBE_5variabel_dan_5persamaan';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi 1" href="materi_1.html" />
+    <link rel="next" title="" href="TUGAS_determinan.html" />
+    <link rel="prev" title="Materi 5" href="materi_5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +118,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +137,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,13 +164,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     my identity
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="materi_1.html">Materi 1</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="materi_2.html">Materi 2</a></li>
@@ -182,7 +181,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="materi_5.html">Materi 5</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="OBE_5variabel_dan_5persamaan.html">tugas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">tugas</a></li>
 
 
 
@@ -286,7 +285,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FOBE_5variabel_dan_5persamaan.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +315,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/OBE_5variabel_dan_5persamaan.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -326,7 +325,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -392,7 +391,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>my identity</h1>
+    <h1>tugas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -402,8 +401,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-materi-tugas">Daftar Materi &amp; Tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-operasi-baris-elementer-5-variabel-dan-5-persamaan-eliminasi-gauss">membuat operasi baris elementer 5 variabel dan 5 persamaan (eliminasi gauss)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-menggunakan-operasi-baris-elementer">penyelesaian menggunakan operasi baris elementer</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#subsitusi-balik">subsitusi balik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">hasil akhir</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -414,25 +418,121 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="my-identity">
-<h1>my identity<a class="headerlink" href="#my-identity" title="Link to this heading">#</a></h1>
-<p>halo semuanya, Selamat datang di website tugas kuliah <strong>Komputasi Aljabar Linear</strong> kami. Website kami susun untuk memenuhi tugas dan mendokumentasikan implementasi konsep-konsep aljabar linear yang kami kerjakan.
-perkenalkan saya :</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p><strong>Nama Lengkap:</strong> <strong><em>M KAMALUS SHIDDIQI</em></strong></p></li>
-<li><p><strong>Nim:</strong> <strong><em>250411100155</em></strong></p></li>
-<li><p><strong>Program Studi:</strong> <strong><em>Teknik Informatika</em></strong></p></li>
-<li><p><strong>Kampus:</strong> <strong><em>Universitas Trunodjoyo Madura (UTM)</em></strong></p></li>
-</ul>
-<hr class="docutils" />
-<section id="daftar-materi-tugas">
-<h2>Daftar Materi &amp; Tugas<a class="headerlink" href="#daftar-materi-tugas" title="Link to this heading">#</a></h2>
-<p>Di dalam website ini, terdapat beberapa materi penting yang telah dipelajari dan diimplementasikan ke dalam kode program, Silakan gunakan menu navigasi di sidebar sebelah kiri untuk menjelajahi setiap materi dan melihat kode program beserta outputnya secara detail.
-selamat menyaksikan</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas">
+<h1>tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
 </section>
-<div class="toctree-wrapper compound">
+<section class="tex2jax_ignore mathjax_ignore" id="membuat-operasi-baris-elementer-5-variabel-dan-5-persamaan-eliminasi-gauss">
+<h1>membuat operasi baris elementer 5 variabel dan 5 persamaan (eliminasi gauss)<a class="headerlink" href="#membuat-operasi-baris-elementer-5-variabel-dan-5-persamaan-eliminasi-gauss" title="Link to this heading">#</a></h1>
+<p>#sistem persamaan</p>
+<div class="math notranslate nohighlight">
+\[x+y+w+v+z=5\]</div>
+<div class="math notranslate nohighlight">
+\[2x+3y+w+v+z=8\]</div>
+<div class="math notranslate nohighlight">
+\[x+y+2w+v+z=7\]</div>
+<div class="math notranslate nohighlight">
+\[x+y+w+3v+z=9\]</div>
+<div class="math notranslate nohighlight">
+\[x+y+w+v+2z=8\]</div>
+<p>#bentuk matriks augmented</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bentuk_matriks</span><span class="o">=</span><span class="p">[[</span><span class="s2">&quot;1 1 1 1 1 |5&quot;</span><span class="p">],[</span><span class="s2">&quot;2 3 1 1 1 |8&quot;</span><span class="p">],[</span><span class="s2">&quot;1 1 2 1 1 |7&quot;</span><span class="p">],[</span><span class="s2">&quot;1 1 1 3 1 |9&quot;</span><span class="p">],[</span><span class="s2">&quot;1 1 1 1 2 |8&quot;</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">bentuk_matriks</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;1 1 1 1 1 |5&#39;]
+[&#39;2 3 1 1 1 |8&#39;]
+[&#39;1 1 2 1 1 |7&#39;]
+[&#39;1 1 1 3 1 |9&#39;]
+[&#39;1 1 1 1 2 |8&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="penyelesaian-menggunakan-operasi-baris-elementer">
+<h1>penyelesaian menggunakan operasi baris elementer<a class="headerlink" href="#penyelesaian-menggunakan-operasi-baris-elementer" title="Link to this heading">#</a></h1>
+<p>#langkah 1
+hilangkan elemen pivot pertama</p>
+<ul class="simple">
+<li><p>R<sub>2</sub>= R<sub>2</sub>-2R<sub>1</sub></p></li>
+<li><p>R<sub>3</sub>= R<sub>3</sub>-R<sub>1</sub></p></li>
+<li><p>R<sub>4</sub>= R<sub>4</sub>-R<sub>1</sub></p></li>
+<li><p>R<sub>5</sub>= R<sub>5</sub>-R<sub>1</sub></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">langkah_1</span> <span class="o">=</span><span class="p">[[</span><span class="s2">&quot;1 1 1 1 1 |5&quot;</span><span class="p">],[</span><span class="s2">&quot;0 1 -1 -1 -1 |-2&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 1 0 0 |2&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 0 2 0 |4&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 0 0 1 |3&quot;</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">langkah_1</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;1 1 1 1 1 |5&#39;]
+[&#39;0 1 -1 -1 -1 |-2&#39;]
+[&#39;0 0 1 0 0 |2&#39;]
+[&#39;0 0 0 2 0 |4&#39;]
+[&#39;0 0 0 0 1 |3&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>#langkah 2
+ubah pivot agar bernilai 1.</p>
+<ul class="simple">
+<li><p>R<sub>4</sub>=<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>R<sub>4</sub></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">langkah_2</span> <span class="o">=</span><span class="p">[[</span><span class="s2">&quot;1 1 1 1 1 |5&quot;</span><span class="p">],[</span><span class="s2">&quot;0 1 -1 -1 -1 |-2&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 1 0 0 |2&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 0 1 0 |2&quot;</span><span class="p">],[</span><span class="s2">&quot;0 0 0 0 1 |3&quot;</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">langkah_2</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;1 1 1 1 1 |5&#39;]
+[&#39;0 1 -1 -1 -1 |-2&#39;]
+[&#39;0 0 1 0 0 |2&#39;]
+[&#39;0 0 0 1 0 |2&#39;]
+[&#39;0 0 0 0 1 |3&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="subsitusi-balik">
+<h1>subsitusi balik<a class="headerlink" href="#subsitusi-balik" title="Link to this heading">#</a></h1>
+<p>dari baris terakhir
+$<span class="math notranslate nohighlight">\(z=3\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(v=2\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(w=2\)</span>$</p>
+<p>masukkan ke baris 2:
+$<span class="math notranslate nohighlight">\(y-w-v-z=-2\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(y-2-2-3=-2\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(y=5\)</span>$</p>
+<p>masukkan ke baris 1:
+$<span class="math notranslate nohighlight">\(x+y+w+v+z=5\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x+5+2+2+3=5\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x=-7\)</span>$</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hasil-akhir">
+<h1>hasil akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[x=-7\]</div>
+<div class="math notranslate nohighlight">
+\[y=5\]</div>
+<div class="math notranslate nohighlight">
+\[w=2\]</div>
+<div class="math notranslate nohighlight">
+\[v=2\]</div>
+<div class="math notranslate nohighlight">
+\[z=3\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -465,12 +565,21 @@ selamat menyaksikan</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="materi_5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Materi 5</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="materi_1.html"
+       href="TUGAS_determinan.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi 1</p>
+        <p class="prev-next-title"></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -492,8 +601,13 @@ selamat menyaksikan</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-materi-tugas">Daftar Materi &amp; Tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-operasi-baris-elementer-5-variabel-dan-5-persamaan-eliminasi-gauss">membuat operasi baris elementer 5 variabel dan 5 persamaan (eliminasi gauss)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-menggunakan-operasi-baris-elementer">penyelesaian menggunakan operasi baris elementer</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#subsitusi-balik">subsitusi balik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">hasil akhir</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
