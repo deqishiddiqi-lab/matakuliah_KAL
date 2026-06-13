@@ -1,4 +1,4 @@
-# Materi 6
+# Materi 6 : Transformasi Matriks dan Implementasi Mesin Vektor 2D
 
 # F. Transformasi Matriks dan Implementasi Mesin Vektor 2D
 

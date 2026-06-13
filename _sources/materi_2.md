@@ -1,4 +1,4 @@
-# Materi 2
+# Materi 2 : penyelesaian persamaan linear
 
 # B. Menyelesaikan Sistem Persamaan Linear 5x5 dengan Berbagai Metode
 

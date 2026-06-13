@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Materi 3 &#8212; KOMPUTASI ALJABAR LINEAR</title>
+    <title>Materi 3 : penyelesaian eliminasi gaussion &#8212; KOMPUTASI ALJABAR LINEAR</title>
   
   
   
@@ -65,8 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'materi_3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi 4" href="materi_4.html" />
-    <link rel="prev" title="tugas transformasi matriks" href="tugas_transformasi_matriks.html" />
+    <link rel="next" title="Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)" href="tugas_eliminasi_gauss.html" />
+    <link rel="prev" title="Materi 2 : penyelesaian persamaan linear" href="materi_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,23 +171,23 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="materi_1.html">Materi 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_1.html">Materi 1 pengantar KAL</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="materi_2.html">Materi 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_2.html">Materi 2 : penyelesaian persamaan linear</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="tugas_transformasi_matriks.html">tugas transformasi matriks</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi 3</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="materi_4.html">Materi 4</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="materi_5.html">Materi 5</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi 3 : penyelesaian eliminasi gaussion</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="tugas_eliminasi_gauss.html">Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_4.html">Materi 4 : dasar dasar teori</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="materi_5.html">Materi 5 : perhitungan determinan</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="TUGAS_determinan.html">Tugas Determinan &amp; Invers Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas_iterasi.html">Eigen value dan Eigen vektor dengan dekomposisi QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="materi_6.html">Materi 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_6.html">Materi 6 : Transformasi Matriks dan Implementasi Mesin Vektor 2D</a></li>
 
 
+<li class="toctree-l1"><a class="reference internal" href="tugas_transformasi_matriks.html">tugas transformasi matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi_7.html">Materi 7</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="materi_10.html">Materi 10:</a></li>
@@ -373,7 +373,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Materi 3</h1>
+    <h1>Materi 3 : penyelesaian eliminasi gaussion</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,7 +383,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 3 : penyelesaian eliminasi gaussion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-studi-kasus-kompleks-eliminasi-gaussian-spl-5x5">C. Studi Kasus Kompleks Eliminasi Gaussian SPL 5x5</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-sistem-persamaan-linear-dan-matriks-augmented">Representasi Sistem Persamaan Linear dan Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-transformasi-operasi-baris-elementer-obe">Proses Transformasi Operasi Baris Elementer (OBE)</a><ul class="nav section-nav flex-column">
@@ -410,8 +410,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="materi-3">
-<h1>Materi 3<a class="headerlink" href="#materi-3" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-3-penyelesaian-eliminasi-gaussion">
+<h1>Materi 3 : penyelesaian eliminasi gaussion<a class="headerlink" href="#materi-3-penyelesaian-eliminasi-gaussion" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="c-studi-kasus-kompleks-eliminasi-gaussian-spl-5x5">
 <h1>C. Studi Kasus Kompleks Eliminasi Gaussian SPL 5x5<a class="headerlink" href="#c-studi-kasus-kompleks-eliminasi-gaussian-spl-5x5" title="Link to this heading">#</a></h1>
@@ -611,20 +611,20 @@ $<span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - R_2\)</span>$
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="tugas_transformasi_matriks.html"
+       href="materi_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">tugas transformasi matriks</p>
+        <p class="prev-next-title">Materi 2 : penyelesaian persamaan linear</p>
       </div>
     </a>
     <a class="right-next"
-       href="materi_4.html"
+       href="tugas_eliminasi_gauss.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi 4</p>
+        <p class="prev-next-title">Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -646,7 +646,7 @@ $<span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - R_2\)</span>$
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi 3 : penyelesaian eliminasi gaussion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-studi-kasus-kompleks-eliminasi-gaussian-spl-5x5">C. Studi Kasus Kompleks Eliminasi Gaussian SPL 5x5</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-sistem-persamaan-linear-dan-matriks-augmented">Representasi Sistem Persamaan Linear dan Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-transformasi-operasi-baris-elementer-obe">Proses Transformasi Operasi Baris Elementer (OBE)</a><ul class="nav section-nav flex-column">

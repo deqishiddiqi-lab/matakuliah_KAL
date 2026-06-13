@@ -1,4 +1,4 @@
-# Materi 1
+# Materi 1 pengantar KAL
 
 # A. Apa yang Dimaksud dengan Aljabar Linear?
 

@@ -1,4 +1,4 @@
-# Materi 5
+# Materi 5 : perhitungan determinan
 
 # E. Komputasi Determinan dengan Ekspansi Baris dan Invers Menggunakan Metode Adjoin
 
