@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title> &#8212; KOMPUTASI ALJABAR LINEAR</title>
+    <title>Tugas Determinan &amp; Invers Matriks &#8212; KOMPUTASI ALJABAR LINEAR</title>
   
   
   
@@ -65,8 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'TUGAS_determinan';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="tugas" href="OBE_5variabel_dan_5persamaan.html" />
+    <link rel="next" title="Materi 6" href="materi_6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -181,34 +180,14 @@
 
 <li class="toctree-l1"><a class="reference internal" href="materi_5.html">Materi 5</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="OBE_5variabel_dan_5persamaan.html">tugas</a></li>
-
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Determinan &amp; Invers Matriks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_6.html">Materi 6</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi_7.html">Materi 7</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="materi_10.html">Materi 10:</a></li>
 </ul>
 
     </div>
@@ -315,7 +294,7 @@
       
       
       
-      <li><a href="_sources/TUGAS_determinan.ipynb" target="_blank"
+      <li><a href="_sources/TUGAS_determinan.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -325,7 +304,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -391,7 +370,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Tugas Determinan & Invers Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -401,30 +380,19 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-menghitung-determinan-matriks-ekspansi-baris">BAGIAN A: Menghitung Determinan Matriks (Ekspansi Baris)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2-times-2">1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-times-3">2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-4-times-4">3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span></a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-menghitung-invers-matriks-metode-adjoint">BAGIAN B: Menghitung Invers Matriks (Metode Adjoint)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span></a></li>
+</ul>
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -435,137 +403,120 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#soal
-#A. Hitung determinan matrik berikut dengan menggunakan rumus expansi baris</p>
-<ol class="arabic">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}-7&amp;-5\\1&amp;4\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-menggunakan ekspansi baris pertama(i=1):</p>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(a_{11}=-7,M_{11}=4\)</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-determinan-invers-matriks">
+<h1>Tugas Determinan &amp; Invers Matriks<a class="headerlink" href="#tugas-determinan-invers-matriks" title="Link to this heading">#</a></h1>
+<section id="bagian-a-menghitung-determinan-matriks-ekspansi-baris">
+<h2>BAGIAN A: Menghitung Determinan Matriks (Ekspansi Baris)<a class="headerlink" href="#bagian-a-menghitung-determinan-matriks-ekspansi-baris" title="Link to this heading">#</a></h2>
+<section id="matriks-2-times-2">
+<h3>1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span><a class="headerlink" href="#matriks-2-times-2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong>
+Menggunakan ekspansi baris pertama (<span class="math notranslate nohighlight">\(i = 1\)</span>):</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a_{11} = -7 \implies M_{11} = 4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a_{12} = -5 \implies M_{12} = 1\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\det(A) = (-1)^{1+1}(-7)(4) + (-1)^{1+2}(-5)(1)\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = 1(-28) + (-1)(-5)\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = -28 + 5 = -23\]</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1><a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(a_{12}=-5,M_{12}=1\)</span></p>
+<hr class="docutils" />
+<section id="matriks-3-times-3">
+<h3>2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span><a class="headerlink" href="#matriks-3-times-3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong>
+Menggunakan ekspansi baris ketiga (<span class="math notranslate nohighlight">\(i = 3\)</span>) karena memiliki elemen nol terbanyak:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a_{31} = 0, \quad a_{32} = 0, \quad a_{33} = 1\)</span></p></li>
+<li><p>Minor <span class="math notranslate nohighlight">\(M_{33}\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}M_{33} = \det\begin{bmatrix} 0 &amp; 2 \\ 1 &amp; -2 \end{bmatrix} = (0)(-2) - (2)(1) = -2\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = (-1)^{3+3} \cdot a_{33} \cdot M_{33}\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = (1)(1)(-2) = -2\]</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id3">
-<h1><a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(det(A)=(-1)^{1+1}(-7)(4)+(-1)^{1+2}(-5)(1)\)</span></p>
+<hr class="docutils" />
+<section id="matriks-4-times-4">
+<h3>3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span><a class="headerlink" href="#matriks-4-times-4" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong></p>
+<div class="math notranslate nohighlight">
+\[\det(A) = -128\]</div>
+<hr class="docutils" />
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id4">
-<h1><a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(det(A)=(1)(-28)+(-1)+(-5)\)</span></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id5">
-<h1><a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(det(A)=-28+-5=-23\)</span></p>
-<ol class="arabic" start="2">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}0&amp;2&amp;-3\\1&amp;-2&amp;-1\\0&amp;0&amp;1\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-karena angka nol terbanyak ada di baris ke tiga maka saya akan mengambil baris 3(i=3)</p>
+<hr class="docutils" />
+<section id="bagian-b-menghitung-invers-matriks-metode-adjoint">
+<h2>BAGIAN B: Menghitung Invers Matriks (Metode Adjoint)<a class="headerlink" href="#bagian-b-menghitung-invers-matriks-metode-adjoint" title="Link to this heading">#</a></h2>
+<p>Rumus utama: <span class="math notranslate nohighlight">\(A^{-1} = \frac{1}{\det(A)} \text{adj}(A)\)</span></p>
+<section id="id1">
+<h3>1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong></p>
+<ul class="simple">
+<li><p>Dari soal A.1, didapatkan <span class="math notranslate nohighlight">\(\det(A) = -23\)</span></p></li>
+<li><p>Kofaktor:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[C_{11} = 4, \quad C_{12} = -1, \quad C_{21} = 5, \quad C_{22} = -7\]</div>
+<ul class="simple">
+<li><p>Matriks Adjoint:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{adj}(A) = \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Invers Matriks:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix} = \begin{bmatrix} -\frac{4}{23} &amp; -\frac{5}{23} \\ \frac{1}{23} &amp; \frac{7}{23} \end{bmatrix}\end{split}\]</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id6">
-<h1><a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(a_{31}=0,a_{32}=0\)</span></p>
+<hr class="docutils" />
+<section id="id2">
+<h3>2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong></p>
+<ul class="simple">
+<li><p>Dari soal A.2, didapatkan <span class="math notranslate nohighlight">\(\det(A) = -2\)</span></p></li>
+<li><p>Nilai Kofaktor <span class="math notranslate nohighlight">\(C_{ij}\)</span>:</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{11} = +((-2)(1) - (0)(-1)) = -2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{12} = -((1)(1) - (0)(-1)) = -1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{13} = +((1)(0) - (0)(-2)) = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{21} = -((2)(1) - (0)(-3)) = -2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{22} = +((0)(1) - (0)(-3)) = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{23} = -((0)(0) - (0)(2)) = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{31} = +((2)(-1) - (-2)(-3)) = -8\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{32} = -((0)(-1) - (1)(-3)) = -3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_{33} = +((0)(-2) - (1)(2)) = -2\)</span></p></li>
+<li><p>Matriks Adjoint (<span class="math notranslate nohighlight">\(\text{adj}(A) = C^T\)</span>):</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{adj}(A) = \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Invers Matriks:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix} = \begin{bmatrix} 1 &amp; 1 &amp; 4 \\ 0.5 &amp; 0 &amp; 1.5 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id7">
-<h1><a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(a_{33}=1,M_{32}=A=\left|\begin{bmatrix}0&amp;2\\1&amp;-2&amp;\end{bmatrix}\right| =(0)(-2)-(2)(1)=-2\)</span></p>
+<hr class="docutils" />
+<section id="id3">
+<h3>3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span><a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
+<p><strong>Penyelesaian:</strong></p>
+<div class="math notranslate nohighlight">
+\[A^{-1} = -\frac{1}{128} \text{adj}(A)\]</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id8">
-<h1><a class="headerlink" href="#id8" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(det(A)=(-1)^{3+3}(1)(-2)=(1)(1)(-2)=-2\)</span></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id9">
-<h1><a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
-<ol class="arabic" start="3">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}1&amp;-3&amp;1&amp;1\\-3&amp;1&amp;1&amp;1\\1&amp;1&amp;-3&amp;1\\1&amp;1&amp;1&amp;-3\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-det(A)=-128</p>
-<p>#B. gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus</p>
-<ol class="arabic">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}-7&amp;-5\\1&amp;4\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-det(A)=-23 ini hasil dari soal nomor 1</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id10">
-<h1><a class="headerlink" href="#id10" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{11}=4,C_{12}=-1,C_{21}=5,C_{22}=-7\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id11">
-<h1><a class="headerlink" href="#id11" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(adj(A)=\begin{bmatrix}4&amp;5\\-1&amp;-7\end{bmatrix}\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id12">
-<h1><a class="headerlink" href="#id12" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(A^{-1}=\frac{1}{-23}\begin{bmatrix}4&amp;5\\-1&amp;-7\end{bmatrix}=\begin{bmatrix}-4/23&amp;-5/23\\1/23&amp;7/23\end{bmatrix}\)</span></p>
-<ol class="arabic" start="2">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}0&amp;2&amp;-3\\1&amp;-2&amp;-1\\0&amp;0&amp;1\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-<span class="math notranslate nohighlight">\(C_{11}=+|(-2)(1)-(0)(-1)|=-2\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id13">
-<h1><a class="headerlink" href="#id13" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{12}=-|(1)(1)-(0)(-1)|=-1\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id14">
-<h1><a class="headerlink" href="#id14" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{13}=+|(1)(0)-(0)(-2)|=0\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id15">
-<h1><a class="headerlink" href="#id15" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{21}=-|(2)(1)-(0)(-3)|=-2\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id16">
-<h1><a class="headerlink" href="#id16" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{22}=+|(0)(1)-(0)(-3)|=0\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id17">
-<h1><a class="headerlink" href="#id17" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{23}=-|(0)(0)-(0)(2)|=0\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id18">
-<h1><a class="headerlink" href="#id18" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{31}=+|(2)(-1)-(-2)(-3)|=-8\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id19">
-<h1><a class="headerlink" href="#id19" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{32}=-|(0)(-1)-(-1)(-3)|=-3\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id20">
-<h1><a class="headerlink" href="#id20" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(C_{33}=+|(0)(-2)-(1)(2)|=-2\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id21">
-<h1><a class="headerlink" href="#id21" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(adj(A)=C^T=\begin{bmatrix}-2&amp;-2&amp;-8\\-1&amp;0&amp;-3\\0&amp;0&amp;-2\end{bmatrix}\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id22">
-<h1><a class="headerlink" href="#id22" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(=A^{-1}=\frac{1}{-2}\begin{bmatrix}-2&amp;-2&amp;-8\\-1&amp;0&amp;-3\\0&amp;0&amp;-2\end{bmatrix}=\begin{bmatrix}1&amp;1&amp;4\\0,5&amp;0&amp;1,5\\0&amp;0&amp;1\end{bmatrix}\)</span></p>
-<ol class="arabic" start="3">
-<li><div class="math notranslate nohighlight">
-\[\begin{split}A=\begin{bmatrix}1&amp;-3&amp;1&amp;1\\-3&amp;1&amp;1&amp;1\\1&amp;1&amp;-3&amp;1\\1&amp;1&amp;1&amp;-3\end{bmatrix}\end{split}\]</div>
-</li>
-</ol>
-<p>#jawaban
-<span class="math notranslate nohighlight">\(A_{-1}=-\frac{1}{128}adj(A)\)</span></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -598,21 +549,12 @@ det(A)=-23 ini hasil dari soal nomor 1</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="OBE_5variabel_dan_5persamaan.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">tugas</p>
-      </div>
-    </a>
     <a class="right-next"
-       href="notebooks.html"
+       href="materi_6.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Materi 6</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -634,30 +576,19 @@ det(A)=-23 ini hasil dari soal nomor 1</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-menghitung-determinan-matriks-ekspansi-baris">BAGIAN A: Menghitung Determinan Matriks (Ekspansi Baris)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2-times-2">1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-times-3">2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-4-times-4">3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span></a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-menghitung-invers-matriks-metode-adjoint">BAGIAN B: Menghitung Invers Matriks (Metode Adjoint)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Matriks <span class="math notranslate nohighlight">\(3 \times 3\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span></a></li>
+</ul>
+</li>
+</ul>
   </nav></div>
 
 </div></div>

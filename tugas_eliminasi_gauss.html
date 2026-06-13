@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>my identity &#8212; KOMPUTASI ALJABAR LINEAR</title>
+    <title>Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss) &#8212; KOMPUTASI ALJABAR LINEAR</title>
   
   
   
@@ -62,10 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_eliminasi_gauss';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi 1" href="materi_1.html" />
+    <link rel="next" title="Tugas Determinan &amp; Invers Matriks" href="TUGAS_determinan.html" />
+    <link rel="prev" title="Materi 5" href="materi_5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +118,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +137,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,13 +164,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     my identity
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="materi_1.html">Materi 1</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="materi_2.html">Materi 2</a></li>
@@ -182,7 +181,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="materi_5.html">Materi 5</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="tugas_eliminasi_gauss.html">Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TUGAS_determinan.html">Tugas Determinan &amp; Invers Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi_6.html">Materi 6</a></li>
 
@@ -266,7 +265,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas_eliminasi_gauss.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +295,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/tugas_eliminasi_gauss.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +371,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>my identity</h1>
+    <h1>Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,7 +381,15 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-materi-tugas">Daftar Materi &amp; Tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear">1. Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">2. Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-menggunakan-obe">3. Penyelesaian Menggunakan OBE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-elemen-di-bawah-pivot-pertama">Langkah 1: Eliminasi Elemen di Bawah Pivot Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mengubah-nilai-pivot-menjadi-1">Langkah 2: Mengubah Nilai Pivot Menjadi 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik-back-substitution">4. Substitusi Balik (Back-Substitution)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">5. Hasil Akhir</a></li>
 </ul>
             </nav>
         </div>
@@ -394,25 +401,108 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="my-identity">
-<h1>my identity<a class="headerlink" href="#my-identity" title="Link to this heading">#</a></h1>
-<p>halo semuanya, Selamat datang di website tugas kuliah <strong>Komputasi Aljabar Linear</strong> kami. Website kami susun untuk memenuhi tugas dan mendokumentasikan implementasi konsep-konsep aljabar linear yang kami kerjakan.
-perkenalkan saya :</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p><strong>Nama Lengkap:</strong> <strong><em>M KAMALUS SHIDDIQI</em></strong></p></li>
-<li><p><strong>Nim:</strong> <strong><em>250411100155</em></strong></p></li>
-<li><p><strong>Program Studi:</strong> <strong><em>Teknik Informatika</em></strong></p></li>
-<li><p><strong>Kampus:</strong> <strong><em>Universitas Trunodjoyo Madura (UTM)</em></strong></p></li>
-</ul>
-<hr class="docutils" />
-<section id="daftar-materi-tugas">
-<h2>Daftar Materi &amp; Tugas<a class="headerlink" href="#daftar-materi-tugas" title="Link to this heading">#</a></h2>
-<p>Di dalam website ini, terdapat beberapa materi penting yang telah dipelajari dan diimplementasikan ke dalam kode program, Silakan gunakan menu navigasi di sidebar sebelah kiri untuk menjelajahi setiap materi dan melihat kode program beserta outputnya secara detail.
-selamat menyaksikan</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-obe-5variabel-dan-5persamaan-eliminasi-gauss">
+<h1>Tugas: OBE_5variabel_dan_5persamaan (Eliminasi Gauss)<a class="headerlink" href="#tugas-obe-5variabel-dan-5persamaan-eliminasi-gauss" title="Link to this heading">#</a></h1>
+<p><strong>Sistem Persamaan Linear 5 Variabel dan 5 Persamaan</strong></p>
+<section id="sistem-persamaan-linear">
+<h2>1. Sistem Persamaan Linear<a class="headerlink" href="#sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[x + y + w + v + z = 5\]</div>
+<div class="math notranslate nohighlight">
+\[2x + 3y + w + v + z = 8\]</div>
+<div class="math notranslate nohighlight">
+\[x + y + 2w + v + z = 7\]</div>
+<div class="math notranslate nohighlight">
+\[x + y + w + 3v + z = 9\]</div>
+<div class="math notranslate nohighlight">
+\[x + y + w + v + 2z = 8\]</div>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+<hr class="docutils" />
+<section id="bentuk-matriks-augmented">
+<h2>2. Bentuk Matriks Augmented<a class="headerlink" href="#bentuk-matriks-augmented" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[ \begin{array}{ccccc|c} 
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 5 \\ 
+2 &amp; 3 &amp; 1 &amp; 1 &amp; 1 &amp; 8 \\ 
+1 &amp; 1 &amp; 2 &amp; 1 &amp; 1 &amp; 7 \\ 
+1 &amp; 1 &amp; 1 &amp; 3 &amp; 1 &amp; 9 \\ 
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 2 &amp; 8 
+\end{array} \right]\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="penyelesaian-menggunakan-obe">
+<h2>3. Penyelesaian Menggunakan OBE<a class="headerlink" href="#penyelesaian-menggunakan-obe" title="Link to this heading">#</a></h2>
+<section id="langkah-1-eliminasi-elemen-di-bawah-pivot-pertama">
+<h3>Langkah 1: Eliminasi Elemen di Bawah Pivot Pertama<a class="headerlink" href="#langkah-1-eliminasi-elemen-di-bawah-pivot-pertama" title="Link to this heading">#</a></h3>
+<p>Lakukan operasi pada baris kedua hingga kelima menggunakan baris pertama sebagai acuan:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R_2 = R_2 - 2R_1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R_3 = R_3 - R_1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R_4 = R_4 - R_1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R_5 = R_5 - R_1\)</span></p></li>
+</ul>
+<p>Hasil matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[ \begin{array}{ccccc|c} 
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 5 \\ 
+0 &amp; 1 &amp; -1 &amp; -1 &amp; -1 &amp; -2 \\ 
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \\ 
+0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 4 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 
+\end{array} \right]\end{split}\]</div>
+</section>
+<section id="langkah-2-mengubah-nilai-pivot-menjadi-1">
+<h3>Langkah 2: Mengubah Nilai Pivot Menjadi 1<a class="headerlink" href="#langkah-2-mengubah-nilai-pivot-menjadi-1" title="Link to this heading">#</a></h3>
+<p>Ubah elemen diagonal pada baris keempat agar bernilai 1:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R_4 = \frac{1}{2} R_4\)</span></p></li>
+</ul>
+<p>Hasil matriks akhir (Bentuk Eselon Baris):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[ \begin{array}{ccccc|c} 
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 5 \\ 
+0 &amp; 1 &amp; -1 &amp; -1 &amp; -1 &amp; -2 \\ 
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \\ 
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 2 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 
+\end{array} \right]\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="substitusi-balik-back-substitution">
+<h2>4. Substitusi Balik (Back-Substitution)<a class="headerlink" href="#substitusi-balik-back-substitution" title="Link to this heading">#</a></h2>
+<p>Dari bentuk matriks eselon baris di atas, kita dapat langsung menentukan nilai variabel dari baris bawah ke atas:</p>
+<ul class="simple">
+<li><p><strong>Baris 5:</strong>
+$<span class="math notranslate nohighlight">\(z = 3\)</span>$</p></li>
+<li><p><strong>Baris 4:</strong>
+$<span class="math notranslate nohighlight">\(v = 2\)</span>$</p></li>
+<li><p><strong>Baris 3:</strong>
+$<span class="math notranslate nohighlight">\(w = 2\)</span>$</p></li>
+<li><p><strong>Baris 2:</strong> Masukkan nilai <span class="math notranslate nohighlight">\(w, v,\)</span> dan <span class="math notranslate nohighlight">\(z\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[y - w - v - z = -2\]</div>
+<div class="math notranslate nohighlight">
+\[y - 2 - 2 - 3 = -2\]</div>
+<div class="math notranslate nohighlight">
+\[y - 7 = -2 \implies y = 5\]</div>
+<ul class="simple">
+<li><p><strong>Baris 1:</strong> Masukkan nilai <span class="math notranslate nohighlight">\(y, w, v,\)</span> dan <span class="math notranslate nohighlight">\(z\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[x + y + w + v + z = 5\]</div>
+<div class="math notranslate nohighlight">
+\[x + 5 + 2 + 2 + 3 = 5\]</div>
+<div class="math notranslate nohighlight">
+\[x + 12 = 5 \implies x = -7\]</div>
+</section>
+<hr class="docutils" />
+<section id="hasil-akhir">
+<h2>5. Hasil Akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[x = -7, \quad y = 5, \quad w = 2, \quad v = 2, \quad z = 3\]</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -445,12 +535,21 @@ selamat menyaksikan</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="materi_5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Materi 5</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="materi_1.html"
+       href="TUGAS_determinan.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi 1</p>
+        <p class="prev-next-title">Tugas Determinan &amp; Invers Matriks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -472,7 +571,15 @@ selamat menyaksikan</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daftar-materi-tugas">Daftar Materi &amp; Tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear">1. Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">2. Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-menggunakan-obe">3. Penyelesaian Menggunakan OBE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-elemen-di-bawah-pivot-pertama">Langkah 1: Eliminasi Elemen di Bawah Pivot Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mengubah-nilai-pivot-menjadi-1">Langkah 2: Mengubah Nilai Pivot Menjadi 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik-back-substitution">4. Substitusi Balik (Back-Substitution)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">5. Hasil Akhir</a></li>
 </ul>
   </nav></div>
 
